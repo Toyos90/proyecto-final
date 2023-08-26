@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 @Getter
 @Setter
 @Entity
-@Table(name="goods")
+@Table(name="myCart")
 @NoArgsConstructor
 @AllArgsConstructor
 public class models {
@@ -18,32 +18,8 @@ public class models {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name="Id")
     private int id;
-    @Column(name="Type")
-//    @Enumerated(EnumType.STRING)
-    private String prodType ;
-    @Value("Tu frase aqui")
-    @Column(name="Message")
-    private String prodMessage;
-    //@Nullable
-    @Value("")
-    @Column(name="Size")
-//    @Enumerated(EnumType.STRING)
-    private String prodSize;      //Dani: Revisar si da problemas el null con la enumeracion
-    @Value("White")
-    @Column(name="Color")
-    private String prodColor;
-
-
-//    enum enumType{
-//        Camiseta,
-//        Sudadera,
-//        Taza,
-//        Botella
-//    }
-//
-//    enum enumSize{
-//        S,M,L,XL
-//    }
-
-
+    @Column(name= "product")
+    private String product;
+    @Column (name= "price")
+    private Float price;
 }
