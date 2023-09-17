@@ -53,13 +53,6 @@ export default {
           desc: 'description 5: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
           link:'#',
         },
-        { 
-          id: 5, 
-          title: 'title: 6', 
-          img: 'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/03/OLD.jpg', 
-          desc: 'description 6: Short description of the website : Lorem ipsum dolor sit amet consectetur adipisicing elit. In ex quaerat animi, deleniti sequi labore corporis ut quidem et neque minima vel magni incidunt cupiditate sint nesciunt doloremque. Iste, sunt!',
-          link:'#',
-        },
       ],
       displays: [
         {
@@ -120,8 +113,6 @@ export default {
   overflow-y: hidden;
 
 }
-
-/* chrome */
 .work-nav::-webkit-scrollbar{
   background-color: hsla(160, 100%, 37%, 0.5);
   height: 5px;
