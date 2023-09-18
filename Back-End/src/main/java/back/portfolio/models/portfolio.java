@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Value;
 
 @Getter
 @Setter
@@ -12,15 +11,18 @@ import org.springframework.beans.factory.annotation.Value;
 @AllArgsConstructor
 
 @Entity
-@Table(name="projects")
+@Table(name="portfolio")
 
-public class projects {
+public class portfolio {
     @Id
     @Column(name = "id")
 
     private Long id;
-    @Column(name = "link")
+    @Column(name = "title") // Usa el mismo nombre que en la tabla portfolio
+    private String title;
+    @Column(name = "link") // Usa el mismo nombre que en la tabla portfolio
     private String url;
-    @Column(name = "img_url")
+    @Column(name = "img_url") // Usa el mismo nombre que en la tabla portfolio
     private String imgUrl;
+
 }

@@ -20,9 +20,9 @@ const router = createRouter({
       component: () => import('../views/SkillsView.vue')
     },
     {
-      path: '/work',
-      name: 'work',
-      component: () => import('../views/WorkView.vue')
+      path: '/Gallery',
+      name: 'Gallery',
+      component: () => import('../views/GalleryView.vue')
     },
     {
       path: '/contact',

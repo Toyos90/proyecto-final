@@ -1,6 +1,6 @@
 package back.portfolio.services;
 
-import back.portfolio.models.projects;
+import back.portfolio.models.portfolio;
 import back.portfolio.repositories.ProjectsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,13 +16,7 @@ public class ProjectsService {
         this.projectsRepository = projectsRepository;
     }
 
-    public List<projects> getAllProjects() {
-        return projectsRepository.findAll();
+    public List<portfolio> getAllProjects() {
+        return projectsRepository.findAll(); // Usa el método findAll() para obtener todos los proyectos
     }
-
-    public projects createProject(projects project) {
-        return projectsRepository.save(project);
-    }
-
-    // Otros métodos para actualizar, eliminar, obtener por ID, etc.
 }
